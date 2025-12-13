@@ -62,8 +62,7 @@ public class Day5 extends Year2025 {
         String[] parts = contentTest.split("\n\n");
         List<String> freshRanges = Arrays.asList(parts[0].split("\n"));
         List<Range> sortedRanges = new java.util.ArrayList<>(freshRanges.stream()
-                .map(line -> new Range(Long.parseLong(line.split("-")[0]),
-                        Long.parseLong(line.split("-")[1])))
+                .map(line -> new Range(Long.parseLong(line.split("-")[0]), Long.parseLong(line.split("-")[1])))
                 .sorted(Comparator.comparing(Range::start).thenComparing(Range::end))
                 .toList());
 
