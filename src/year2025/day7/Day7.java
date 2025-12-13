@@ -13,8 +13,8 @@ public class Day7 extends Year2025 {
         String contentTest = Files.readString(Path.of(PATH + "day7/test.txt"));
         String contentInput = Files.readString(Path.of(PATH + "day7/input.txt"));
 
-        // System.out.println(resolve1Star(contentTest, 3));
-        // System.out.println(resolve1Star(contentInput, 4));
+        System.out.println(resolve1Star(contentTest));
+        System.out.println(resolve1Star(contentInput));
 
         System.out.println(resolve2Star(contentTest));
         System.out.println(resolve2Star(contentInput));
